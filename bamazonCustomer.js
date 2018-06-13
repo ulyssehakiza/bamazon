@@ -1,6 +1,6 @@
 var mysql = require("mysql");
 var inquirer = require('inquirer');
-
+  
 /* var pucharseId = "";
 var purchaseUnit = "" ;
 var stock = ""; */
@@ -60,7 +60,7 @@ var promptCustomer = function(res) {
               inquirer.prompt([{
                 type: "input",
                 name: "quantity",
-                message: "How many item would you like to buy?",
+                message: "How many item would you like to buy? [Quit with Q]",
                 validate: function(value) {
                   if(isNaN(value)==false) {
                     return true;
@@ -84,9 +84,6 @@ var promptCustomer = function(res) {
               })
      
               })
-            
-          
-       
 
     }
 

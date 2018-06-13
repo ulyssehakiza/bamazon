@@ -40,3 +40,21 @@ VALUES ("laptop" , "tech" , 1400 , 10);
 
 INSERT INTO products(product_name, department_name, price, stock_quantity)
 VALUES ("nike" , "shoes" , 145 , 50);
+
+
+CREATE TABLE Departments(
+    department_id INT AUTO_INCREMENT NOT NULL,
+    department_name VARCHAR(50) NOT NULL,
+    over_head_costs DECIMAL(10,2) NOT NULL,
+    PRIMARY KEY(department_id));
+
+
+SELECT * FROM departments;
+
+INSERT INTO departments (department_name, over_head_costs)
+VALUES ("Electronics", 20000),
+  ("Food and Drink", 500),
+  ("clothing", 5000),
+  ("accessories", 11000),
+  ("shoes", 11000),
+ 
